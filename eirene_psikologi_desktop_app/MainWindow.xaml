@@ -5,8 +5,23 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eirene_psikologi_desktop_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="600" Width="800">
     <Grid>
-        
+        <Rectangle HorizontalAlignment="Center" Height="584" Stroke="Black" VerticalAlignment="Center" Width="800" Fill="#FFF3D457"/>
+        <Rectangle HorizontalAlignment="Left" Height="584" VerticalAlignment="Center" Width="432" Fill="#FFDEDEDE"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="454,131,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/sign1.png"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="622,131,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/sign2.png"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="450,282,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/sign3.png"/>
+        <Image HorizontalAlignment="Left" Height="191" Margin="622,282,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/sign4.png"/>
+        <Label Content="Selamat Datang &#xD;&#xA;Kembali di Ëirene" HorizontalAlignment="Left" Margin="40,70,0,0" VerticalAlignment="Top" Foreground="#FF5D5D5D" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Belum punya akun?&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,171,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF5D5D5D"/>
+        <Label Content="Yuk Daftar" HorizontalAlignment="Left" Margin="220,171,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF5D5D5D"/>
+        <Label Content="________________________________________________________________________" HorizontalAlignment="Left" Margin="42,189,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF5D5D5D"/>
+        <TextBox HorizontalAlignment="Left" Margin="42,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="309" Height="42" RenderTransformOrigin="0.5,0.5" Foreground="#FF8E8E8E" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="42,375,0,0" VerticalAlignment="Top" Width="309" Height="42" Foreground="#FF8E8E8E"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="42,242,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF5D5D5D"/>
+        <Label Content="Password&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,346,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF5D5D5D"/>
+        <Button Content="Masuk" HorizontalAlignment="Left" Margin="131,462,0,0" VerticalAlignment="Top" Height="38" Width="122" Foreground="White" BorderBrush="#FFF3D457" Background="#FFF3D457" FontSize="16" Click="Button_Click"/>
+
     </Grid>
 </Window>
