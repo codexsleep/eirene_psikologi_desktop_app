@@ -1,0 +1,44 @@
+﻿<Window x:Class="eirene_psikologi_desktop_app.Register"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:eirene_psikologi_desktop_app"
+        mc:Ignorable="d"
+        Title="Register" Height="600" Width="800">
+    <Grid>
+        <Rectangle HorizontalAlignment="Left" Height="584" Stroke="Black" VerticalAlignment="Center" Width="281" Fill="#FFF3D457" Margin="514,0,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="584" VerticalAlignment="Center" Width="519" Fill="#FFDEDEDE"/>
+        <Label Content="Daftar Akun Ëirene &#xD;&#xA;" HorizontalAlignment="Left" Margin="40,70,0,0" VerticalAlignment="Top" Foreground="#FF5D5D5D" FontSize="36" FontWeight="Bold"/>
+        <Label Content="Sudah punya akun?&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,130,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF5D5D5D"/>
+        <Label Content="Login Sekarang!" HorizontalAlignment="Left" Margin="220,130,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF5D5D5D"/>
+        <Label Content="______________________________________________________________________________________________________" HorizontalAlignment="Left" Margin="42,150,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF5D5D5D"/>
+        <TextBox HorizontalAlignment="Left" Margin="42,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="182" Height="42" RenderTransformOrigin="0.5,0.5" Foreground="#FF8E8E8E" TextChanged="TextBox_TextChanged"/>
+        <PasswordBox HorizontalAlignment="Left" Margin="42,387,0,0" VerticalAlignment="Top" Width="420" Height="42" Foreground="#FF8E8E8E"/>
+        <Label Content="Nama" HorizontalAlignment="Left" Margin="42,188,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF5D5D5D"/>
+        <Label Content="Tanggal Lahir" HorizontalAlignment="Left" Margin="259,188,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF5D5D5D"/>
+        <TextBox HorizontalAlignment="Left" Margin="260,221,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="202" Height="42" RenderTransformOrigin="0.5,0.5" Foreground="#FF8E8E8E" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="42,264,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF5D5D5D"/>
+        <TextBox HorizontalAlignment="Left" Margin="42,301,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="420" Height="42" RenderTransformOrigin="0.5,0.5" Foreground="#FF8E8E8E" TextChanged="TextBox_TextChanged"/>
+        <Label Content="Password&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,352,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF5D5D5D"/>
+        <Button Content="Daftar" HorizontalAlignment="Left" Margin="203,462,0,0" VerticalAlignment="Top" Height="38" Width="122" Foreground="White" BorderBrush="#FFF3D457" Background="#FFF3D457" FontSize="16" Click="Button_Click"/>
+        <Ellipse HorizontalAlignment="Left" Height="123" Margin="591,40,0,0" Stroke="White" Opacity="50" VerticalAlignment="Top" Width="132">
+            <Ellipse.Fill>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="123" Margin="591,225,0,0" Stroke="White" VerticalAlignment="Top" Width="132">
+            <Ellipse.Fill>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Ellipse HorizontalAlignment="Left" Height="122" Margin="591,411,0,0" Stroke="White" VerticalAlignment="Top" Width="132">
+            <Ellipse.Fill>
+                <SolidColorBrush Color="White" Opacity="0.5"/>
+            </Ellipse.Fill>
+        </Ellipse>
+        <Image HorizontalAlignment="Left" Height="100" Margin="607,67,0,0" VerticalAlignment="Top" Width="100" Source="file:///C:/project/eirene_psikologi_desktop_app/img/RP-1.png"/>
+        <Image HorizontalAlignment="Left" Height="64" Margin="618,440,0,0" VerticalAlignment="Top" Width="100" Source="file:///C:/project/eirene_psikologi_desktop_app/img/RP-2.png"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="604,255,0,0" VerticalAlignment="Top" Width="100" Source="file:///C:/project/eirene_psikologi_desktop_app/img/RP-3.png"/>
+    </Grid>
+</Window>
