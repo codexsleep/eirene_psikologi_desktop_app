@@ -16,3 +16,5 @@ C:\project\eirene_psikologi_desktop_app\eirene_psikologi_desktop_app\obj\Debug\e
 C:\project\eirene_psikologi_desktop_app\eirene_psikologi_desktop_app\obj\Debug\eirene_psikologi_desktop_app.pdb
 C:\project\eirene_psikologi_desktop_app\eirene_psikologi_desktop_app\obj\Debug\Beranda.g.cs
 C:\project\eirene_psikologi_desktop_app\eirene_psikologi_desktop_app\obj\Debug\Beranda.baml
+C:\project\eirene_psikologi_desktop_app\eirene_psikologi_desktop_app\obj\Debug\Account.g.cs
+C:\project\eirene_psikologi_desktop_app\eirene_psikologi_desktop_app\obj\Debug\Account.baml
