@@ -5,23 +5,56 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:eirene_psikologi_desktop_app"
         mc:Ignorable="d"
-        Title="MainWindow" Height="600" Width="800">
+        WindowState="Maximized"
+        Title="Login" Height="{x:Static SystemParameters.PrimaryScreenHeight}" Width="{x:Static SystemParameters.PrimaryScreenWidth}">
+    <Window.Resources>
+        <ControlTemplate x:Key="passwordbox" TargetType="{x:Type PasswordBox}">
+            <Border Background="{TemplateBinding Background}" 
+        x:Name="Bd" BorderBrush="#FFE6DDDD"
+        BorderThickness="{TemplateBinding BorderThickness}" CornerRadius="10">
+                <ScrollViewer Name="PART_ContentHost" SnapsToDevicePixels="{TemplateBinding UIElement.SnapsToDevicePixels}" />
+            </Border>
+            <ControlTemplate.Triggers>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="Background" Value="{DynamicResource {x:Static SystemColors.ControlBrushKey}}" TargetName="Bd"/>
+                    <Setter Property="Foreground" Value="{DynamicResource {x:Static SystemColors.GrayTextBrushKey}}"/>
+                </Trigger>
+                <Trigger Property="Width" Value="Auto">
+                    <Setter Property="MinWidth" Value="100"/>
+                </Trigger>
+                <Trigger Property="Height" Value="Auto">
+                    <Setter Property="MinHeight" Value="20"/>
+                </Trigger>
+            </ControlTemplate.Triggers>
+        </ControlTemplate>
+    </Window.Resources>
     <Grid>
-        <Rectangle HorizontalAlignment="Center" Height="584" VerticalAlignment="Center" Width="800" Fill="#FFF3D457"/>
-        <Rectangle HorizontalAlignment="Left" Height="584" VerticalAlignment="Center" Width="432" Fill="#FFDEDEDE"/>
-        <Image HorizontalAlignment="Left" Height="191" Margin="454,131,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign1.png"/>
-        <Image HorizontalAlignment="Left" Height="191" Margin="622,131,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign2.png"/>
-        <Image HorizontalAlignment="Left" Height="191" Margin="450,282,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign3.png"/>
-        <Image HorizontalAlignment="Left" Height="191" Margin="622,282,0,0" VerticalAlignment="Top" Width="148" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign4.png"/>
-        <Label Content="Selamat Datang &#xD;&#xA;Kembali di Ëirene" HorizontalAlignment="Left" Margin="40,70,0,0" VerticalAlignment="Top" Foreground="#FF5D5D5D" FontSize="36" FontWeight="Bold"/>
-        <Label Content="Belum punya akun?&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,171,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF5D5D5D"/>
-        <Label Content="Yuk Daftar" HorizontalAlignment="Left" Margin="220,171,0,0" VerticalAlignment="Top" FontSize="20" FontWeight="Bold" Foreground="#FF5D5D5D"/>
-        <Label Content="________________________________________________________________________" HorizontalAlignment="Left" Margin="42,189,0,0" VerticalAlignment="Top" FontSize="20" Foreground="#FF5D5D5D"/>
-        <TextBox HorizontalAlignment="Left" Margin="42,273,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="309" Height="42" RenderTransformOrigin="0.5,0.5" Foreground="#FF8E8E8E" TextChanged="TextBox_TextChanged"/>
-        <PasswordBox HorizontalAlignment="Left" Margin="42,375,0,0" VerticalAlignment="Top" Width="309" Height="42" Foreground="#FF8E8E8E"/>
-        <Label Content="Email" HorizontalAlignment="Left" Margin="42,242,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="14" Foreground="#FF5D5D5D"/>
-        <Label Content="Password&#xD;&#xA;" HorizontalAlignment="Left" Margin="42,346,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16" Foreground="#FF5D5D5D"/>
-        <Button Content="Masuk" HorizontalAlignment="Left" Margin="131,462,0,0" VerticalAlignment="Top" Height="38" Width="122" Foreground="White" BorderBrush="#FFF3D457" Background="#FFF3D457" FontSize="16" Click="Button_Click"/>
-
+        <Rectangle HorizontalAlignment="Left" Height="754" VerticalAlignment="Top" Width="544" Fill="#FFF3D457" Margin="845,-2,0,0"/>
+        <Rectangle HorizontalAlignment="Left" Height="752" VerticalAlignment="Center" Width="845" Fill="#FFDEDEDE"/>
+        <Image HorizontalAlignment="Left" Height="256" Margin="923,203,0,0" VerticalAlignment="Top" Width="184" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign1.png"/>
+        <Image HorizontalAlignment="Left" Height="270" Margin="1140,194,0,0" VerticalAlignment="Top" Width="195" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign2.png"/>
+        <Image HorizontalAlignment="Left" Height="265" Margin="920,402,0,0" VerticalAlignment="Top" Width="194" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign3.png"/>
+        <Image HorizontalAlignment="Left" Height="256" Margin="1146,405,0,0" VerticalAlignment="Top" Width="184" Source="file:///C:/project/eirene_psikologi_desktop_app/img/sign4.png"/>
+        <Label Content="Selamat Datang &#xD;&#xA;Kembali di Ëirene" HorizontalAlignment="Left" Margin="64,56,0,0" VerticalAlignment="Top" Foreground="#FF5D5D5D" FontSize="48" FontWeight="Bold" Height="195" Width="808"/>
+        <Label Content="Belum punya akun?&#xD;&#xA;" HorizontalAlignment="Left" Margin="64,187,0,0" VerticalAlignment="Top" FontSize="36" Foreground="#FF5D5D5D" Height="115" Width="484"/>
+        <Label Content="Yuk Daftar" HorizontalAlignment="Left" Margin="387,187,0,0" VerticalAlignment="Top" FontSize="36" FontWeight="Bold" Foreground="#FF5D5D5D" Height="68" Width="292"/>
+        <Label Content="________________________________________________________________________" HorizontalAlignment="Left" Margin="64,196,0,0" VerticalAlignment="Top" FontSize="48" Foreground="#FF5D5D5D" Height="68" Width="822"/>
+        <TextBox HorizontalAlignment="Left" Margin="71,349,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="612" Height="60" RenderTransformOrigin="0.5,0.5" Foreground="#FF8E8E8E" FontSize="30">
+            <TextBox.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+        <PasswordBox Template="{StaticResource passwordbox}" HorizontalAlignment="Left" Margin="71,490,0,0" VerticalAlignment="Top"  Width="612" Height="60" Foreground="#FF8E8E8E" FontSize="30"/>
+        <Label Content="Email" HorizontalAlignment="Left" Margin="71,291,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF5D5D5D" Height="66" Width="149"/>
+        <Label Content="Password&#xD;&#xA;" HorizontalAlignment="Left" Margin="71,435,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="30" Foreground="#FF5D5D5D" Height="97" Width="241"/>
+        <Button Content="Masuk" HorizontalAlignment="Left" Margin="289,585,0,0" VerticalAlignment="Top" Height="49" Width="161" Foreground="White" BorderBrush="#FFF3D457" Background="#FFF3D457" FontSize="22" FontWeight="Bold">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>
